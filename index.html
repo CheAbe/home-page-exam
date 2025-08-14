@@ -12,26 +12,43 @@
 
 </head>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
 <body>
 
 
 <nav class="navbar">
-		    	<ul>
-		    		<li><a href="index.html">Home</a></li>
-		    		<li><a href="#about">About</a></li>
-		    		<li><a href="#attractions">Top attractions</a></li>
-		  			<li><a href="#tour-packages">Tour Packages</a></li>
-		    	</ul>	
-		    </nav>
+    <div class="navbar-container fixed-top">
+        <!-- Navbar Links -->
+        <ul id="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#attractions">Top attractions</a></li>
+            <li><a href="#tour-packages">Tour Packages</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        
+        <!-- Navbar Toggle (Hamburger) -->
+        <label for="navbar-toggle" class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        
+    </div>
+</nav>
 
 <!-- Hero Section -->
 <header id="hero">
-    <div class="hero-content">
+    <div class="hero-content container-fluid">
+    	<div class="row">
+    	<div class="col-12">
         <h1>Explore Kamakura: Japan’s Spiritual Heart</h1>
         <p>Discover temples, shrines, scenic landscapes, and traditional foods in Kamakura.</p>
-        <a href="#tour-packages" class="btn">Book Your Kamakura Tour</a>
+        <a href="#tour-packages" class="custom-btn">Book Your Kamakura Tour</a>
+    </div>
+    </div>
     </div>
 </header>
 
@@ -39,159 +56,228 @@
 <section id="about">
     <div class="container">
         <h2>About Kamakura</h2>
-        <p>Kamakura is a city with a rich history, and its significance in Japan goes back to the Kamakura period (1185–1333), which marked the rise of the samurai and the establishment of Japan's first military government, known as the shogunate.</p>
-        <p>Kamakura is a serene city steeped in history and natural beauty, located just a short train ride from Tokyo. Known for its breathtaking temples, ancient shrines, and the iconic Great Buddha (Daibutsu), Kamakura is a must-see destination for those seeking peace and cultural immersion in Japan.</p>
-        <p>Whether you’re walking through the bamboo groves, visiting the many Buddhist temples, or enjoying the nearby beaches, Kamakura offers a tranquil escape from the hustle and bustle of city life.</p>
+        <div class="row">
+            <!-- Text Column -->
+            <div class="col-12 col-md-6 larger-text">
+                <p><strong><em>Kamakura</em></strong> is a city with a rich history, and its significance in Japan goes back to the Kamakura period (1185–1333), which marked the rise of the samurai and the establishment of Japan's first military government, known as the shogunate.</p>
+                <p>It is a serene city steeped in history and natural beauty, located just a short train ride from Tokyo. Known for its breathtaking temples, ancient shrines, and the iconic Great Buddha (Daibutsu), Kamakura is a must-see destination for those seeking peace and cultural immersion in Japan.</p>
+                <p>Whether you’re walking through the bamboo groves, visiting the many Buddhist temples, or enjoying the nearby beaches, Kamakura offers a tranquil escape from the hustle and bustle of city life.</p>
+            </div>
 
-    </div>
-</section>
-
-<!-- Tour Packages Section -->
-<section id="tour-packages">
-    <div class="container">
-        <h2>Our Kamakura Tour Packages</h2>
-        
-        <div class="package">
-            <h3>Kamakura Temple Tour</h3>
-            <p>Explore the historic temples of Kamakura, including the famous Hasedera Temple and the Tsurugaoka Hachimangu Shrine. Learn about the city’s spiritual history from our expert guides.</p>
-            <p><strong>Duration:</strong> 4 Hours</p>
-            <a href="#" class="btn">Book Now</a>
-        </div>
-
-        <div class="package">
-            <h3>Kamakura & Nature Walk</h3>
-            <p>This tour blends culture and nature, taking you to serene spots like the Bamboo Groves and the Komachi-dori street, followed by a peaceful hike through the hills around Kamakura.</p>
-            <p><strong>Duration:</strong> 6 Hours</p>
-            <a href="#" class="btn">Book Now</a>
-        </div>
-
-        <div class="package">
-            <h3>Kamakura Sunset Tour</h3>
-            <p>Experience Kamakura as the sun sets over the ocean. This evening tour includes a visit to the Great Buddha and a stroll along the beach for breathtaking views at sunset.</p>
-            <p><strong>Duration:</strong> 3 Hours</p>
-            <a href="#" class="btn">Book Now</a>
-        </div>
-
-
-        <div class="package">
-            <h3>Kamakura Food Tour</h3>
-            <p>Embark on a culinary journey through Kamakura’s local food scene. Enjoy fresh seafood, traditional sweets, and discover the stories behind Kamakura’s food culture. Visit hidden gems like local markets and specialty food shops!</p>
-            <p><strong>Duration:</strong> 3 Hours</p>
-            <a href="#" class="btn">Book Now</a>
-        </div>
-
-    </div>
-</section>
-
-
-<!-- Kamakura Attractions Section -->
-<section id="attractions">
-    <div class="container">
-        <h2>Top Kamakura Attractions</h2>
-
-        <!-- Center the Carousel -->
-        <div class="carousel-container d-flex justify-content-center align-items-center">
-            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <!-- Image with 50% width overlay text -->
-                        <div class="carousel-image-container position-relative">
-                            <img src="images/Daibutsu.jpg" class="d-block w-100" alt="Great Buddha">
-                            <div class="carousel-text position-absolute bottom-0 start-0 bg-dark text-white p-3 w-50">
-                                <h3>The Great Buddha</h3>
-                                <p>Standing 13.35 meters tall, the Great Buddha is one of Japan's most iconic statues.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!-- Image with 50% width overlay text -->
-                        <div class="carousel-image-container position-relative">
-                            <img src="images/Hasedera.jpg" class="d-block w-100" alt="Hasedera Temple">
-                            <div class="carousel-text position-absolute bottom-0 start-0 bg-dark text-white p-3 w-50">
-                                <h3>Hasedera Temple</h3>
-                                <p>This temple is famous for its beautiful gardens and large Kannon statue.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!-- Image with 50% width overlay text -->
-                        <div class="carousel-image-container position-relative">
-                            <img src="images/Hachimangu.jpg" class="d-block w-100" alt="Tsurugaoka Hachimangu Shrine">
-                            <div class="carousel-text position-absolute bottom-0 start-0 bg-dark text-white p-3 w-50">
-                                <h3>Tsurugaoka Hachimangu Shrine</h3>
-                                <p>One of the most important religious sites in Kamakura, surrounded by cherry trees.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!-- Image with 50% width overlay text -->
-                        <div class="carousel-image-container position-relative">
-                            <img src="images/Hokokuji.jpg" class="d-block w-100" alt="Hokokuji Temple">
-                            <div class="carousel-text position-absolute bottom-0 start-0 bg-dark text-white p-3 w-50">
-                                <h3>Hokokuji Temple</h3>
-                                <p>Famous for its tranquil bamboo groves and Zen gardens.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!-- Image with 50% width overlay text -->
-                        <div class="carousel-image-container position-relative">
-                            <img src="images/Yuigahama_beach.jpg" class="d-block w-100" alt="Yuigahama Beach">
-                            <div class="carousel-text position-absolute bottom-0 start-0 bg-dark text-white p-3 w-50">
-                                <h3>Yuigahama Beach</h3>
-                                <p>Relax by the sea and enjoy breathtaking views of Kamakura's coastline.</p>
-                            </div>
-                        </div>
+            <!-- Image Column with Text -->
+            <div class="col-12 col-md-6">
+                <div class="image-container">
+                    <img src="images/Minamoto.jpg" alt="Kamakura" class="img-fluid">
+                    <div class="overlay-text">
+                        <h4>Minamoto no Yoritomo</h4>
+                        <p>A military leader, became the first shogun of the Kamakura Shogunate</p>
                     </div>
                 </div>
-
-                <!-- Carousel controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+        </div>
+    </div>
+</section>
+        
+<!-- Top Kamakura Attractions -->
+<section id="attractions">
+	<div class="container-fluid">
+	<h2 class="attractions-heading">Top Kamakura Attractions</h2>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+        <!-- First Carousel Item -->
+        <div class="carousel-item active">
+            <div class="carousel-image-container">
+                <img src="images/Daibutsu.jpg" class="d-block w-100" alt="Great Buddha">
+            </div>
+            <div class="carousel-text">
+                <h5>The Great Buddha</h5>
+                <p>Standing 13.35 meters tall, the Great Buddha is one of Japan's most iconic statues.</p>
             </div>
         </div>
 
+        <!-- Second Carousel Item -->
+        <div class="carousel-item">
+            <div class="carousel-image-container">
+                <img src="images/Hasedera.jpg" class="d-block w-100" alt="Hasedera Temple">
+            </div>
+            <div class="carousel-text">
+                <h5>Hasedera Temple</h5>
+                <p>This temple is famous for its beautiful gardens and large Kannon statue.</p>
+            </div>
+        </div>
+
+        <!-- Third Carousel Item -->
+        <div class="carousel-item">
+            <div class="carousel-image-container">
+                <img src="images/Hachimangu.jpg" class="d-block w-100" alt="Tsurugaoka Hachimangu Shrine">
+            </div>
+            <div class="carousel-text">
+                <h5>Tsurugaoka Hachimangu Shrine</h5>
+                <p>One of the most important religious sites in Kamakura, surrounded by cherry trees.</p>
+            </div>
+        </div>
+
+        <!-- Fourth Carousel Item - Hokokuji Temple -->
+        <div class="carousel-item">
+            <div class="carousel-image-container">
+                <img src="images/Hokokuji 2.jpg" class="d-block w-100" alt="Hokokuji Temple">
+            </div>
+            <div class="carousel-text">
+                <h5>Hokokuji Temple</h5>
+                <p>Famous for its tranquil bamboo groves and Zen gardens.</p>
+            </div>
+        </div>
+
+        <!-- Fifth Carousel Item - Yuigahama Beach -->
+        <div class="carousel-item">
+            <div class="carousel-image-container">
+                <img src="images/Yuigahama beach.jpg" class="d-block w-100" alt="Yuigahama Beach">
+            </div>
+            <div class="carousel-text">
+                <h5>Yuigahama Beach</h5>
+                <p>Relax by the sea and enjoy breathtaking views of Kamakura's coastline.</p>
+            </div>
+        </div>
     </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 </section>
 
+<section id="tour-packages">
+    <div class="container-fluid tour-packages">
+        <h2 class="centered-heading">Our Kamakura Tour Packages</h2>
+        <div class="row">
+            <!-- Kamakura Temple Tour Card -->
+            <div class="col-12 col-md-3">
+                <div class="card h-100">
+                    <img src="images/Hasedera 2.jpg" class="card-img-top" alt="Kamakura Temple Tour">
+                    <div class="card-body">
+                        <h3 class="card-title">Kamakura Temple Tour</h3>
+                        <p class="card-text">Explore the historic temples of Kamakura, including the famous Hasedera Temple and the Tsurugaoka Hachimangu Shrine. Learn about the city’s spiritual history from our expert guides.</p>
+                        <p><strong>Duration:</strong> 4 Hours</p>
+                        <a href="#attractions" class="custom-btn btn-primary mt-auto">Book Now</a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Kamakura & Nature Walk Card -->
+            <div class="col-12 col-md-3">
+                <div class="card h-100">
+                    <img src="images/Hokokuji 2.jpg" class="card-img-top" alt="Kamakura Nature Walk">
+                    <div class="card-body">
+                        <h3 class="card-title">Kamakura & Nature Walk</h3>
+                        <p class="card-text">This tour blends culture and nature, taking you to serene spots like the Bamboo Groves,  Sasuke Inari Shrine and Money-Washing Benten, followed by a peaceful hike through the hills around Kamakura.</p>
+                        <p><strong>Duration:</strong> 6 Hours</p>
+                        <a href="#attractions" class="custom-btn btn-primary mt-auto">Book Now</a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Kamakura Sunset Tour Card -->
+            <div class="col-12 col-md-3">
+                <div class="card h-100">
+                    <img src="images/Yuigahama sunset.jpg" class="card-img-top" alt="Kamakura Sunset Tour">
+                    <div class="card-body">
+                        <h3 class="card-title">Kamakura Sunset Tour</h3>
+                        <p class="card-text">Experience Kamakura as the sun sets over the ocean. This evening tour includes a visit to the Great Buddha and a stroll along the beach for breathtaking views at sunset.</p>
+                        <p><strong>Duration:</strong> 3 Hours</p>
+                        <a href="#attractions" class="custom-btn btn-primary mt-auto">Book Now</a>
+                    </div>
+                </div>
+            </div>
 
-
+            <!-- Kamakura Food Tour Card -->
+            <div class="col-12 col-md-3">
+                <div class="card h-100">
+                    <img src="images/Shirasu bowl.jpg" class="card-img-top" alt="Kamakura Food Tour">
+                    <div class="card-body">
+                        <h3 class="card-title">Kamakura Food Tour</h3>
+                        <p class="card-text">Embark on a culinary journey through Kamakura’s local food scene. Enjoy fresh seafood, traditional sweets, and discover the stories behind Kamakura’s food culture. Visit hidden gems like local markets and specialty food shops!</p>
+                        <p><strong>Duration:</strong> 3 Hours</p>
+                        <a href="#attractions" class="custom-btn btn-primary mt-auto">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
 
 
 
 <!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+<section id="contact" class="container-fluid py-5">
+    <div class="row m-5">
+        <h1 class="text-center mt-5">Contact Us</h1>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+        
+        <div class="col-md-6 py-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d6544.868172930676!2d139.5470095!3d35.3189382!3m2!1i1024!2i768!4f13.1!2m1!1skamakura%20station!5e1!3m2!1sen!2sjp!4v1755186592407!5m2!1sen!2sjp"
+                width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+        <!-- Contact Form (Right half) -->
+        <div id="form" class="col-md-6 py-5">
+            <form class="text-black">
+                <!-- Name Field -->
+                <div class="mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" class="form-control">
+                </div>
 
-            <button type="submit" class="btn">Submit</button>
-        </form>
+                <!-- Email Field -->
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <!-- Message Field -->
+                <div class="mb-3">
+                    <label for="concern">Message</label>
+                    <textarea class="form-control" id="message" rows="7"></textarea>
+                </div>
+
+                <!-- Submit Button and Modal Trigger -->
+                <div id="button_and_links" class="mt-2">
+                    <button id="button" type="button" class="btn btn-primary" data-bs-toggle="modal">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 
 <!-- Footer -->
 <footer>
     <div class="container">
+    	<div class="row">
+    	<div class="col-12">
         <p>&copy; 2025 Explore Kamakura Tours. All Rights Reserved.</p>
+     </div>   
+    </div>
     </div>
 </footer>
 
 </body>
 </html>
+
+
+
+
