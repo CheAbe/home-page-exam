@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Kamakura - Japan's Spiritual Heart</title>
+    <title>Explore Kamakura - Where History Meets Serenity</title>
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -17,34 +17,37 @@
 <body>
 
 
-<nav class="navbar">
-    <div class="navbar-container fixed-top">
-        <!-- Navbar Links -->
-        <ul id="navbar-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#attractions">Top attractions</a></li>
-            <li><a href="#tour-packages">Tour Packages</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+<nav class="navbar navbar-expand-lg container-fluid navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#attractions">Top attractions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tour-packages">Tour Packages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
         </ul>
-        
-        <!-- Navbar Toggle (Hamburger) -->
-        <label for="navbar-toggle" class="navbar-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-
-        
     </div>
 </nav>
 
 <!-- Hero Section -->
 <header id="hero">
     <div class="hero-content container-fluid">
-    	<div class="row">
+    	<div class="row mx-0">
     	<div class="col-12">
-        <h1>Explore Kamakura: Japan’s Spiritual Heart</h1>
+        <h1>Explore Kamakura: Where History Meets Serenity</h1>
         <p>Discover temples, shrines, scenic landscapes, and traditional foods in Kamakura.</p>
         <a href="#tour-packages" class="custom-btn">Book Your Kamakura Tour</a>
     </div>
@@ -55,8 +58,8 @@
 <!-- About Kamakura Section -->
 <section id="about">
     <div class="container">
-        <h2>About Kamakura</h2>
-        <div class="row">
+        <h2 class="about-header">About Kamakura</h2>
+        <div class="row mx-0">
             <!-- Text Column -->
             <div class="col-12 col-md-6 larger-text">
                 <p><strong><em>Kamakura</em></strong> is a city with a rich history, and its significance in Japan goes back to the Kamakura period (1185–1333), which marked the rise of the samurai and the establishment of Japan's first military government, known as the shogunate.</p>
@@ -81,7 +84,7 @@
 <!-- Top Kamakura Attractions -->
 <section id="attractions">
 	<div class="container-fluid">
-	<h2 class="attractions-heading">Top Kamakura Attractions</h2>
+	<h2 class="attractions-heading mt-5">Top Kamakura Attractions</h2>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -160,7 +163,7 @@
 </section>
 
 <section id="tour-packages">
-    <div class="container-fluid tour-packages">
+    <div class="container-fluidtour-packages">
         <h2 class="centered-heading">Our Kamakura Tour Packages</h2>
         <div class="row">
             <!-- Kamakura Temple Tour Card -->
@@ -222,18 +225,18 @@
 
 
 <!-- Contact Section -->
-<section id="contact" class="container-fluid py-5">
-    <div class="row m-5">
-        <h1 class="text-center mt-5">Contact Us</h1>
-
+<section id="contact" class="container-fluid">
+    <div class="row mx-0"> 
+        <h1 class="text-center mt-5 col-12">Contact Us</h1> 
         
-        <div class="col-md-6 py-5">
+        <!-- Google Map Section (Left half) -->
+        <div class="col-12 col-md-6 py-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d6544.868172930676!2d139.5470095!3d35.3189382!3m2!1i1024!2i768!4f13.1!2m1!1skamakura%20station!5e1!3m2!1sen!2sjp!4v1755186592407!5m2!1sen!2sjp"
-                width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <!-- Contact Form (Right half) -->
-        <div id="form" class="col-md-6 py-5">
+        <!-- Contact Form Section (Right half) -->
+        <div id="form" class="col-12 col-md-6 py-5">
             <form class="text-black">
                 <!-- Name Field -->
                 <div class="mb-3">
@@ -249,13 +252,13 @@
 
                 <!-- Message Field -->
                 <div class="mb-3">
-                    <label for="concern">Message</label>
+                    <label for="message">Message</label>
                     <textarea class="form-control" id="message" rows="7"></textarea>
                 </div>
 
                 <!-- Submit Button and Modal Trigger -->
                 <div id="button_and_links" class="mt-2">
-                    <button id="button" type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <button id="button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal">
                         Submit
                     </button>
                 </div>
@@ -267,7 +270,7 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-    	<div class="row">
+    	<div class="row mx-0">
     	<div class="col-12">
         <p>&copy; 2025 Explore Kamakura Tours. All Rights Reserved.</p>
      </div>   
