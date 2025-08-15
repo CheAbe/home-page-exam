@@ -5,12 +5,29 @@
 }
 
 .navbar {
-  margin: 10px;
-  padding: 10px;
-  text-align: right;
-  overflow: hidden;
-  text-decoration: none;
- }
+    text-align: right;
+    overflow: hidden;
+    text-decoration: none;
+    z-index: 1000;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px; 
+}
+
+html {
+    scroll-padding-top: 80px; 
+}
+
+body {
+    padding-top: 80px;  
+}
+
+#first-section {
+    margin-top: 50px;  
+}
 
 .navbar a {
   text-decoration: none;
@@ -18,9 +35,13 @@
 }
 
 .navbar li {
-  display: inline-block;
+
   text-decoration: none;
   list-style-type: none;
+}
+
+#hero, #about, #attractions, #tour-packages, #contact {
+margin-top: 80px;
 }
 
 .hero-content{
@@ -29,45 +50,55 @@
 
 #hero, #attractions, .container {
   text-align: center;
+
 }
+
+
 
 /* Carousel */
 .carousel-image-container {
     position: relative;
     width: 100%;
-    height: 40%;
+    height: 30%;
     overflow: hidden;
 }
 
 .attractions-heading {
-    margin: 40px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
-/* Style the images inside carousel */
+
 .carousel-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    width: 50% !important; 
+    height: auto !important;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
 }
 
-/* Add text below the images */
 .carousel-text {
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.7); /
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 5px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-text h5 {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .carousel-text p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1 rem;
+    line-height: 1.4;
+    margin: 0;
 }
 
 
@@ -110,8 +141,14 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 100vh;  
-    padding: 50px;
+    height: 80%;
+    min-height: 90vh;
+    padding: 40px;
+    margin-top: 40px;  /* Ensure no space above the hero section */
+}
+
+body {
+    padding-top: 0;  /* Ensure there's no padding that pushes the content down */
 }
 
 /* Tour Packages Section */
@@ -132,8 +169,8 @@
     text-align: center;  
     margin: 0 auto;      
     display: block;      
-    margin: 50px;
-    padding: 30px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .card {
@@ -155,14 +192,15 @@
     width: 100%;
 }
 
+
 #about {
     background-color: #f4f4f4; 
-    padding: 50px 0; 
+     
 }
 
 #about h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 36px;
 }
 
